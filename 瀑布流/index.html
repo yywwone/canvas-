@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="Keywords" content="关键词1,关键词2"><!--关键词-->
+	<meta name="Description" content="描述"><!--描述-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximun-scale=1.0"><!--宽度为设备宽度,初始缩放为1.0倍,最小缩放为1.0倍,最大缩放为1.0倍-->
+	<title>瀑布流</title>
+	<script type="text/javascript">
+		var html=document.getElementsByTagName('html')[0];
+		function a() {
+			var w=document.documentElement.clientWidth||window.innerWidth;
+			html.style.fontSize=w/10+"px";/*1rem*/
+		}a();
+		window.addEventListener("resize",function f(){a();},false);
+	</script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin:0;
+		}
+		#container{
+			width:8.4rem;
+			margin:0.5rem auto;
+			height:2rem;
+			/*background: #eee;*/
+		}
+		#container .image{
+			float:left;
+			margin:0 5px 10px 0;
+			width:2rem;
+		}
+		#container .image img{
+			display:block;
+			width:2rem;
+			height:auto;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div class="image">
+		<img src="image/1.jpg">
+	</div>
+	<div class="image">
+		<img src="image/2.jpg">
+	</div>
+	<div class="image">
+		<img src="image/3.jpg">
+	</div>
+	<div class="image">
+		<img src="image/4.jpg">
+	</div>
+	<div class="image">
+		<img src="image/5.jpg">
+	</div>
+	<div class="image">
+		<img src="image/6.jpg">
+	</div>
+	<div class="image">
+		<img src="image/7.jpg">
+	</div>
+	<div class="image">
+		<img src="image/8.jpg">
+	</div>
+	<div class="image">
+		<img src="image/9.jpg">
+	</div>
+	<div class="image">
+		<img src="image/10.jpg">
+	</div>
+	<div class="image">
+		<img src="image/11.jpg">
+	</div>
+	<div class="image">
+		<img src="image/12.jpg">
+	</div>
+	<div class="image">
+		<img src="image/13.jpg">
+	</div>
+	<div class="image">
+		<img src="image/14.jpg">
+	</div>
+	<div class="image">
+		<img src="image/15.jpg">
+	</div>
+	<div class="image">
+		<img src="image/16.jpg">
+	</div>
+
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

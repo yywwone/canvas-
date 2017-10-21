@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*样式重置*/
+        body{ margin: 0;}
+        /*box及相关样式设置*/
+        #box{ margin: 50px auto 0; border: 1px solid #181018;  height: 470px; width: 244px;}
+        /*div1及相关样式设置*/
+        #div1{ height: 420px; width:240px; border: 2px solid #181018;margin-bottom: 5px;}
+        /*图片样式设置*/
+        #img{ width: 27px; height: 25px; position:relative; top: 8px; left: 5px;}
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="div1"></div>
+    <a href="javascript:;"><img id="img" src="2.png" alt="2"/></a>
+    <input id="text1" type="text"/>
+    <input  id="btn1" type="button" value="发送"/>
+</div>
+</body>
+<script>
+    var oDiv =document.getElementById("div1");
+    var oImg =document.getElementById("img");
+    var oText =document.getElementById("text1");
+    var oBtn =document.getElementById("btn1");
+    var onOff =true;
+
+    oImg.onclick = function(){
+        if(onOff){
+            oImg.src = "3.png";
+            onOff = false;
+        }
+        else{
+            oImg.src ="2.png";
+            onOff = true;
+        }
+    }
+
+    oBtn.onclick = function(){
+        oDiv.innerHTML +=oText.value+oImg.innerHTML+"<br />";
+        oText.value ="";
+    }
+</script>
+</html>
